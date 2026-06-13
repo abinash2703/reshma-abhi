@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reshma ❤️ Abinash | Our Story</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f0f0f;
+color:white;
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.8)),
+url('https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:4rem;
+color:#ff4d6d;
+text-shadow:0 0 25px #ff4d6d;
+}
+
+.hero p{
+max-width:850px;
+margin-top:20px;
+font-size:1.2rem;
+padding:0 20px;
+}
+
+.btn{
+margin-top:30px;
+padding:15px 35px;
+background:#ff4d6d;
+border:none;
+border-radius:30px;
+color:white;
+font-size:1rem;
+cursor:pointer;
+text-decoration:none;
+}
+
+.counter{
+font-size:2rem;
+margin-top:25px;
+font-weight:700;
+}
+
+.section{
+padding:90px 10%;
+}
+
+.glass{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+padding:30px;
+border-radius:20px;
+margin-bottom:30px;
+}
+
+h2{
+color:#ff7b92;
+margin-bottom:20px;
+}
+
+.timeline-item{
+padding:20px;
+border-left:3px solid #ff4d6d;
+margin-bottom:20px;
+}
+
+.typewriter{
+overflow:hidden;
+border-right:.15em solid pink;
+white-space:nowrap;
+animation:
+typing 8s steps(80,end),
+blink .8s infinite;
+}
+
+@keyframes typing{
+from{width:0}
+to{width:100%}
+}
+
+@keyframes blink{
+50%{border-color:transparent}
+}
+
+.heart{
+position:fixed;
+bottom:-20px;
+animation:float linear infinite;
+pointer-events:none;
+}
+
+@keyframes float{
+0%{
+transform:translateY(0);
+opacity:1;
+}
+100%{
+transform:translateY(-110vh);
+opacity:0;
+}
+}
+
+#final{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+}
+
+#final h1{
+font-size:4rem;
+color:#ff4d6d;
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+50%{transform:scale(1.08)}
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<h1>Reshma ❤️ Abinash</h1>
+
+<p>
+7 June 2026 — The day destiny introduced me to my favorite person.
+Every day since then has been a chapter of happiness,
+gratitude, and love.
+</p>
+
+<div class="counter" id="counter"></div>
+
+<a href="#story" class="btn">Our Story ❤️</a>
+
+</section>
+
+<section class="section" id="story">
+
+<div class="glass">
+<h2>💌 A Letter To You</h2>
+
+<p class="typewriter">
+Dear Reshma, meeting you on 7th June 2026 became one of the most beautiful moments of my life...
+</p>
+
+<br><br>
+
+<p>
+You are my peace after a difficult day,
+my smile during ordinary moments,
+and the person I look forward to talking to every single day.
+
+Thank you for existing.
+Thank you for being you.
+</p>
+</div>
+
+<div class="glass">
+<h2>🌹 Shayari For My Forever Person</h2>
+
+<p>
+Tere saath har lamha khaas lagta hai,<br>
+Tera naam hi mera ehsaas lagta hai,<br>
+Jo maanga tha rab se duaon mein kabhi,<br>
+Tu wahi sabse khoobsurat jawaab lagta hai.
+</p>
+</div>
+
+<div class="glass">
+<h2>📖 Our Timeline</h2>
+
+<div class="timeline-item">
+<strong>7 June 2026</strong><br>
+The day we met ❤️
+</div>
+
+<div class="timeline-item">
+<strong>Today</strong><br>
+Still creating memories together ✨
+</div>
+
+<div class="timeline-item">
+<strong>Future</strong><br>
+A lifetime of laughter, support and love 💍
+</div>
+
+</div>
+
+<div class="glass">
+<h2>🎵 Our Song</h2>
+
+<p>Enna Sona ❤️</p>
+
+<p>
+Click below and listen while reading this page:
+</p>
+
+<br>
+
+<a class="btn"
+href="https://youtu.be/mrdRHsIkK_c?si=JxoqeCfj7f8yjvdy"
+target="_blank">
+Play Our Song 🎶
+</a>
+
+</div>
+
+</section>
+
+<section id="final">
+
+<h1>I Love You Forever Reshma ❤️</h1>
+
+<br>
+
+<p>
+No matter where life takes us,
+you will always have a special place in my heart.
+</p>
+
+</section>
+
+<script>
+
+const startDate = new Date("June 7, 2026 00:00:00");
+
+function updateCounter(){
+
+const now = new Date();
+const diff = now - startDate;
+
+const days = Math.floor(diff/(1000*60*60*24));
+const hours = Math.floor((diff%(1000*60*60*24))/(1000*60*60));
+const mins = Math.floor((diff%(1000*60*60))/(1000*60));
+
+document.getElementById("counter").innerHTML =
+"❤️ Together Since We Met: " +
+days + " Days " +
+hours + " Hours " +
+mins + " Minutes";
+}
+
+updateCounter();
+setInterval(updateCounter,1000);
+
+function createHeart(){
+
+const heart=document.createElement("div");
+
+heart.className="heart";
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+heart.style.fontSize=(Math.random()*25+15)+"px";
+heart.style.animationDuration=(Math.random()*5+5)+"s";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},10000);
+
+}
+
+setInterval(createHeart,250);
+
+</script>
+
+</body>
+</html>
